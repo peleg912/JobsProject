@@ -1,0 +1,23 @@
+<div *ngIf="jobs" class="container" style="margin-top: 20px;" >
+    <div class="page-header">
+        <h2 style="text-align: center; ">ALL JOBS</h2>
+     </div>
+
+     <div class="dropdown-divider"></div>
+
+  <div class="row" style="margin-top: 30px;">   
+    <div *ngFor="let job of jobs" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="jumbotron">
+        <div >
+        <h4>{{job.title}}</h4> 
+        <h6>Location: {{job.location}}</h6> <br>
+        <h6>Description: </h6>
+        {{job.body}}
+     </div>
+    </div> 
+</div>
+</div>
+
+
+</div>
+
